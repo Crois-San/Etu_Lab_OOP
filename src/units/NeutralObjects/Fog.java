@@ -18,9 +18,8 @@ public class Fog extends NeutralObject{
 		this.value = 2;
 		this.picture = "F";
 	}
-	///взаимодействие юнита с объектом - теряет value от длины хода
     /**
-    * /brief взаимодействие юнита с объектом - теряет value от его брони.
+    * /brief взаимодействие юнита с объектом - теряет value от длины хода.
     * @param interactable - информация о юните, попавшем на поле
     */
 	public int UnitInteract(BaseUnit interactable) {

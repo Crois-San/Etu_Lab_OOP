@@ -12,12 +12,16 @@ import units.BaseUnit;
  */
 
 public class AcidPool extends NeutralObject {
+	/// конструктор, задает символ и value объектв
 	public AcidPool() {
 			this.value = 2;
 			this.picture = "P";
 	}
 	
-	/// взаимодействие юнита с объектом - теряет value от его брони
+    /**
+    * /brief взаимодействие юнита с объектом - теряет value от его брони.
+    * @param interactable - информация о юните, попавшем на поле
+    */
 	public int UnitInteract(BaseUnit interactable) {
 		System.out.println("Unit stepped on acid, armour decreased by " + value +"\n");
 		int unitArmour = interactable.getArmour();
